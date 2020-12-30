@@ -1,0 +1,9 @@
+如何动态修改标题<title>的值？
+```
+// 原生js
+document.getElementsByTagName('title')[0].innerText = "新标题";
+document.title = "新标题";
+// 使用jquery
+$('title').html('新标题'); // html()方法返回或设置被选元素的内容，可以解析标签
+$('title').text('新标题'); // text()方法返回或设置被选元素的文本，不能解析标签
+```
